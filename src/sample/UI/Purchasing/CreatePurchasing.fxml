@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.Purchasing.CreatePurchasingController">
+   <children>
+      <Button fx:id="add" layoutX="390.0" layoutY="392.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Label layoutX="253.0" layoutY="69.0" prefHeight="18.0" prefWidth="192.0" text="Create Purchasing" />
+      <TableView fx:id="potable" layoutX="14.0" layoutY="114.0" prefHeight="250.0" prefWidth="611.0">
+        <columns>
+            <TableColumn fx:id="vendor" prefWidth="162.40001487731934" text="vendor" />
+            <TableColumn fx:id="productID" minWidth="4.20001220703125" prefWidth="125.20001220703125" text="productID" />
+            <TableColumn fx:id="productName" prefWidth="176.39999389648438" text="productName" />
+            <TableColumn fx:id="price" prefWidth="68.79998779296875" text="price" />
+            <TableColumn fx:id="quantity" prefWidth="75.79998779296875" text="quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="productIDText" layoutX="198.0" layoutY="392.0" prefHeight="26.0" prefWidth="101.0" promptText="product ID" />
+      <TextField fx:id="qtyText" layoutX="320.0" layoutY="392.0" prefHeight="26.0" prefWidth="58.0" promptText="qty" />
+      <Button fx:id="create" layoutX="486.0" layoutY="392.0" mnemonicParsing="false" onAction="#create" text="Create PO" />
+      <ComboBox fx:id="vendorComboBox" layoutX="24.0" layoutY="392.0" prefHeight="26.0" prefWidth="159.0" />
+      <Button fx:id="logOut" layoutX="542.0" layoutY="37.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+      <Label fx:id="alert" layoutX="272.0" layoutY="441.0" />
+      <Label layoutX="542.0" layoutY="14.0" prefHeight="18.0" prefWidth="102.0" text="Purchasing" />
+   </children>
+</AnchorPane>

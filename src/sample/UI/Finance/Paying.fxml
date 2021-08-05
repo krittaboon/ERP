@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.Finance.PayingController">
+    <children>
+        <TextField fx:id="gr_number" layoutX="182.0" layoutY="88.0" prefHeight="26.0" prefWidth="132.0" promptText="GR number" />
+        <Label layoutX="293.0" layoutY="40.0" prefHeight="26.0" prefWidth="98.0" text="Paying" />
+
+        <Button layoutX="342.0" layoutY="88.0" mnemonicParsing="false" onAction="#search" text="Search" />
+        <TableView fx:id="irtable" layoutX="15.0" layoutY="132.0" prefHeight="198.0" prefWidth="613.0">
+            <columns>
+                <TableColumn fx:id="productID" prefWidth="142.40000915527344" text="product id" />
+                <TableColumn fx:id="productName" prefWidth="210.0" text="product name" />
+                <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="88.0" text="quantity" />
+                <TableColumn fx:id="price" prefWidth="82.0" text="price" />
+                <TableColumn fx:id="total" prefWidth="89.0" text="total" />
+            </columns>
+        </TableView>
+        <Button fx:id="submit" layoutX="482.0" layoutY="373.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+        <Label layoutX="249.0" layoutY="377.0" prefHeight="18.0" prefWidth="54.0" text="Total :" />
+        <Label fx:id="totalLb" layoutX="328.0" layoutY="377.0" />
+      <Button fx:id="logout" layoutX="536.0" layoutY="41.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+      <Label fx:id="alert" layoutX="175.0" layoutY="421.0" />
+      <Label layoutX="536.0" layoutY="14.0" prefHeight="18.0" prefWidth="82.0" text="Finance" />
+
+    </children>
+</AnchorPane>

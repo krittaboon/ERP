@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.Inventory.GoodsReceivingController">
+   <children>
+       <TextField fx:id="po_number" layoutX="182.0" layoutY="88.0" prefHeight="26.0" prefWidth="132.0" promptText="PO number" />
+      <Label layoutX="284.0" layoutY="39.0" prefHeight="26.0" prefWidth="98.0" text="Create GR" />
+      <TextField fx:id="addID" layoutX="103.0" layoutY="373.0" prefHeight="26.0" prefWidth="105.0" promptText="product id" />
+      <Button layoutX="342.0" layoutY="88.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TableView fx:id="grtable" layoutX="15.0" layoutY="132.0" prefHeight="198.0" prefWidth="616.0">
+        <columns>
+          <TableColumn fx:id="productID" prefWidth="142.40000915527344" text="product id" />
+          <TableColumn fx:id="productName" prefWidth="310.3999481201172" text="product name" />
+          <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="160.800048828125" text="quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="addQty" layoutX="233.0" layoutY="373.0" prefHeight="26.0" prefWidth="89.0" promptText="quantity" />
+      <Button fx:id="add" layoutX="341.0" layoutY="373.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="106.0" text="Edit" />
+      <Button fx:id="submit" layoutX="482.0" layoutY="373.0" mnemonicParsing="false" onAction="#submit" prefHeight="26.0" prefWidth="98.0" text="Submit" />
+      <Button fx:id="logout" layoutX="536.0" layoutY="40.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+      <Label fx:id="alert" layoutX="134.0" layoutY="428.0" />
+      <Button fx:id="problem" layoutX="341.0" layoutY="415.0" mnemonicParsing="false" onAction="#problem" prefHeight="26.0" prefWidth="106.0" text="Problem" />
+      <Label layoutX="536.0" layoutY="18.0" prefHeight="18.0" prefWidth="71.0" text="Inventory" />
+
+   </children>
+</AnchorPane>

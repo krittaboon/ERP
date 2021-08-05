@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.Purchasing.PurchasingMenuController">
+   <children>
+      <Button fx:id="createBtn" layoutX="126.0" layoutY="146.0" mnemonicParsing="false" onAction="#create" text="Create Purchasing" />
+      <Button fx:id="updateBtn" layoutX="345.0" layoutY="146.0" mnemonicParsing="false" onAction="#update" text="Update Purchasing" />
+      <Label layoutX="259.0" layoutY="71.0" prefHeight="18.0" prefWidth="117.0" text="Purchasing" />
+   </children>
+</AnchorPane>

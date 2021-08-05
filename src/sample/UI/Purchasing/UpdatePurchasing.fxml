@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.Purchasing.UpdatePurchasingController">
+    <children>
+        <TextField fx:id="po_number" layoutX="182.0" layoutY="88.0" prefHeight="26.0" prefWidth="132.0" promptText="PO number" />
+        <Label layoutX="284.0" layoutY="39.0" prefHeight="26.0" prefWidth="98.0" text="Update PO" />
+        <TextField fx:id="addID" layoutX="23.0" layoutY="372.0" prefHeight="26.0" prefWidth="105.0" promptText="product id" />
+        <Button layoutX="342.0" layoutY="88.0" mnemonicParsing="false" onAction="#search" text="Search" />
+        <TableView fx:id="grtable" layoutX="15.0" layoutY="132.0" prefHeight="198.0" prefWidth="616.0">
+            <columns>
+                <TableColumn fx:id="productID" prefWidth="142.40000915527344" text="product id" />
+                <TableColumn fx:id="productName" prefWidth="280.40003967285156" text="product name" />
+                <TableColumn fx:id="price" minWidth="0.0" prefWidth="97.60003662109375" text="price" />
+                <TableColumn fx:id="quantity" prefWidth="90.39996337890625" text="quantity" />
+            </columns>
+        </TableView>
+        <TextField fx:id="addQty" layoutX="147.0" layoutY="373.0" prefHeight="26.0" prefWidth="89.0" promptText="quantity" />
+        <Button fx:id="add" layoutX="246.0" layoutY="372.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="75.0" text="Edit" />
+        <Button fx:id="submit" layoutX="500.0" layoutY="419.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+        <DatePicker fx:id="datePicker" layoutX="405.0" layoutY="373.0" promptText="delivery date" />
+        <Button fx:id="logOut" layoutX="541.0" layoutY="40.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+      <Label fx:id="alert" layoutX="178.0" layoutY="432.0" />
+      <Label layoutX="526.0" layoutY="14.0" prefHeight="18.0" prefWidth="90.0" text="Purchasing" />
+
+    </children>
+</AnchorPane>
